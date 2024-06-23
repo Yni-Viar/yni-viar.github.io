@@ -5,17 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="./Css/pico.blue.css">
-    <title>TGPY</title>
+    <title>TGPY project</title>
   </head>
   <body>
     <main class="container-fluid">
         <article>
-          <header>Team Game Platform by Yni</header>
-          <p>Spiritual successor to SCP: Site Online, althrough it is no more an SCP game.</p>
-          <p>It is a game platform with modding support, currently in development...</p>
+          <h1>Team Game Platform by Yni project</h1>
+          <p>It was a spiritual successor to SCP: Site Online, althrough it was no more an SCP game.</p>
+          <p>The main game is deprecated, due to a better alternative - Mirror platform! I found them a while ago, and they made better work, than my...</p>
+          <p>The new goals for the project is to make a good multiplayer starter kit for Godot developers!</p>
           <form action="https://github.com/Yni-Viar/tgpy">
-            <input type="submit" class="outline" value="Source code (Github)" />
+            <input type="submit" class="outline" value="Source code of main game (Github)" />
           </form>
+          <h3>Subprojects</h3>
+          <table>
+            <tr>
+              <td>
+                <p>Tile inventory system</p>
+                <img src="./Res/project_tgpy/tgpy_inventory.png">
+                <form action="https://github.com/Yni-Viar/godot-scalable-inventory">
+                  <input type="submit" class="outline" value="Source code of tile inventory system (Github)" />
+                </form>
+              </td>
+              <td>
+                <p>Team multiplayer system (the core of the game)</p>
+                <img src="./Res/project_tgpy/tgpy_team_game_sample.png">
+                <form action="https://github.com/Yni-Viar/godot-team-multiplayer">
+                  <input type="submit" class="outline" value="Source code of team multiplayer system (Github)" />
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Elevator system (first implemented in SCP: Site Online v.0.8.1)</p>
+                <form action="https://github.com/Yni-Viar/AdvancedElevatorSystem">
+                  <input type="submit" class="outline" value="Source code of elevator system (Github)" />
+                </form>
+              </td>
+              <td>
+                <p>NPC Transport system</p>
+                <button class="outline" disabled>Coming soon</button>
+                <!--<form action="">
+                  <input type="submit" class="outline" value="Source code of elevator system (Github)" />
+                </form>-->
+              </td>
+            </tr>
+          </table>
           <form action="./index.html">
             <input type="submit" class="outline" value="Back to main page" />
           </form>
