@@ -1,47 +1,72 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="./Css/mvp.css">
-    <title>TGPY project</title>
-  </head>
-  <body>
-    <main class="container-fluid">
-        <article>
-          <h1>Team Game Platform by Yni project</h1>
-          <p>It was a spiritual successor to SCP: Site Online, althrough it was no more an SCP game.</p>
-          <p>The main game is deprecated, due to a better alternative - Mirror platform! I found them a while ago, and they made better work, than my...</p>
-          <p>The new goals for the project is to make a good multiplayer starter kit for Godot developers!</p>
-          <a href="https://github.com/Yni-Viar/tgpy"><i>Source code of main game (Github)</i></a>
-          <h3>Subprojects</h3>
-          <table>
-            <tr>
-              <td>
-                <p>Tile inventory system</p>
-                <img src="./Res/project_tgpy/tgpy_inventory.png">
-                <p><a href="https://github.com/Yni-Viar/godot-scalable-inventory"><i>Source code of tile inventory system (Github)</i></a></p>
-              </td>
-              <td>
-                <p>Team multiplayer system (the core of the game)</p>
-                <img src="./Res/project_tgpy/tgpy_team_game_sample.png">
-                <p><a href="https://github.com/Yni-Viar/godot-team-multiplayer"><i>Source code of team multiplayer system (Github)</i></a></p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Elevator system (first implemented in SCP: Site Online v.0.8.1)</p>
-                <p><a href="https://github.com/Yni-Viar/AdvancedElevatorSystem"><i>Source code of elevator system (Github)</i></a></p>
-              </td>
-              <td>
-                <p>NPC Transport system</p>
-                <p><a href="https://github.com/Yni-Viar/godot-moving-platform"><i>Source code of moving platform system (Github)</i></a></p>
-              </td>
-            </tr>
-          </table>
-          <a href="./index.html"><i>Back to main page</i></a>
-        </article>
-    </main>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Game Platform by Yni - Yni's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body id="tgpy">
+<header>
+    <nav>
+        <section class="headpanel">
+            <span class="home">
+                <a href="./index.html">Home</a>
+            </span>
+            <span class="links">
+                <a href="./blog.html">Blog</a>
+                <a id="projectsDropdownInvoker" onclick="dropdown('projectsDropdownInvoker', 'projectsDropdown')" href="#">Projects &darr;</a>
+                <a href="./models.html">Models</a>
+                <a href="./about.html">About</a>
+            </span>
+            <ul id="projectsDropdown" class="dropdown">
+                <li><a href="./projectie.html">Project I.E.</a></li>
+                <li><a href="./tgpy.html">Project TGPY</a></li>
+                <li><a href="./scp-projects.html">SCP universe projects</a></li>
+            </ul>
+
+        </section>
+    </nav>
+</header>
+<main>
+<h3>Project TGPY</h3>
+<ul>
+    <li>
+        <p>Tile inventory system</p>
+        <p><a href="https://github.com/Yni-Viar/godot-scalable-inventory"><i>Source code of tile inventory system (Github)</i></a></p>
+        <img src="./content/images/projects_tgpy_inventory_2024_06_23.png">
+    </li>
+    <li>
+        <p>Team multiplayer system (the core of the game)</p>
+        <p><a href="https://github.com/Yni-Viar/godot-team-multiplayer"><i>Source code of team multiplayer system (Github)</i></a></p>
+    </li>
+    <li>
+        <p>Elevator system (first implemented in SCP: Site Online v.0.8.1)</p>
+        <p><a href="https://github.com/Yni-Viar/AdvancedElevatorSystem"><i>Source code of elevator system (Github)</i></a></p>
+    </li>
+    <li>
+        <p>NPC Transport system</p>
+        <p><a href="https://github.com/Yni-Viar/godot-moving-platform"><i>Source code of moving platform system (Github)</i></a></p>
+    </li>
+</ul>
+</main>
+<script>
+    function dropdown(invokerId, dropdownId)
+    {
+        const invoker = document.getElementById(invokerId);
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.classList.toggle("visible_dropdown");
+    }
+    
+
+</script>
+<div id="safeFooter">
+<section>
+    <p>&copy; 2024 Yni Viar. Content licensed under CC-BY 4.0</p>
+    <p>The website is made by Makesite.py static website generator</p>
+</section>
+</div>
+
+</body>
 </html>

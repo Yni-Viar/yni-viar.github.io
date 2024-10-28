@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SCP projects - Yni's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body id="scp-projects">
+<header>
+    <nav>
+        <section class="headpanel">
+            <span class="home">
+                <a href="./index.html">Home</a>
+            </span>
+            <span class="links">
+                <a href="./blog.html">Blog</a>
+                <a id="projectsDropdownInvoker" onclick="dropdown('projectsDropdownInvoker', 'projectsDropdown')" href="#">Projects &darr;</a>
+                <a href="./models.html">Models</a>
+                <a href="./about.html">About</a>
+            </span>
+            <ul id="projectsDropdown" class="dropdown">
+                <li><a href="./projectie.html">Project I.E.</a></li>
+                <li><a href="./tgpy.html">Project TGPY</a></li>
+                <li><a href="./scp-projects.html">SCP universe projects</a></li>
+            </ul>
+
+        </section>
+    </nav>
+</header>
+<main>
+<h1>Large SCP projects</h1>
+<ul>
+    <li>
+        <h2>SCP: Outrun</h2>
+        <p>A team SCP game, where MTF and SCPs are trying to escape Light Containment Zone.</p>
+        <p><a href="https://github.com/Yni-Viar/scp-outrun"><i>Source code</i></a></p>
+        <p><a href="https://github.com/Yni-Viar/scp-outrun/releases/download/v.0.1.0/SCP-Outrun_Windows.zip"><i>Download for Windows (0.1.0 Alpha) (Linux version is currently NOT available)</i></a></p>
+    </li>
+    <li>
+        <h2>SCP: Site Online (my legacy, replaced by the first one)</h2>
+        <p>It is a SCP: Secret Laboratory clone, designed to be better.</p>
+        <p>But the game's story has ended on April 2024, a year after beginning of the development due to impossibility to implement modding support and lack of motivation</p>
+        <p><a href="https://github.com/Yni-Viar/scp-so"><i>Source code</i></a></p>
+        <p><a href="https://github.com/Yni-Viar/scp-so/releases/tag/v.0.8.1"><i>Download the last version of the game (for Windows and Linux)</i></a></p>
+        <p><a href="https://github.com/Yni-Viar/scp-so/releases"><i>All releases</i></a></p>
+        <footer>
+            <h3>Showcase:</h3>
+            <table>
+                <tr>
+                    <td><img src="./content/images/projects_legacy_scpso_surface_2023-09-10.png"></td>
+                    <td><img src="./content/images/projects_legacy_scpso_scp914_2023-09-10.png"></td>
+                </tr>
+            </table>
+        </footer>
+    </li>
+</ul>
+<h1>SCP projects</h1>
+<ul>
+    <li>
+        <p>SCP-173 mechanic</p>
+        <p><a href="https://github.com/Yni-Viar/scp-173"><i>Source code of SCP-173 mechanic (Github)</i></a></p>
+    </li>
+    <li>
+        <p>SCP-650 mechanic</p>
+        <p><a href="https://github.com/Yni-Viar/scp-650"><i>Source code of SCP-650 mechanic (Github)</i></a></p>
+    </li>
+    <li>
+        <p>SCP-CB-like map generation</p>
+        <p><a href="https://github.com/Yni-Viar/scp-mapgen-v5"><i>Source code of map generation (Github)</i></a></p>
+    </li>
+    <li>
+        <p>Collections of public SCP assets from different SCP games (including my SCP: Site Online)</p>
+        <p><a href="https://github.com/Yni-Viar/scp-assets"><i>Collection (GitHub)</i></a></p>
+    </li>
+</ul>
+</main>
+<script>
+    function dropdown(invokerId, dropdownId)
+    {
+        const invoker = document.getElementById(invokerId);
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.classList.toggle("visible_dropdown");
+    }
+    
+
+</script>
+<div id="safeFooter">
+<section>
+    <p>&copy; 2024 Yni Viar. Content licensed under CC-BY 4.0</p>
+    <p>The website is made by Makesite.py static website generator</p>
+</section>
+</div>
+
+</body>
+</html>
