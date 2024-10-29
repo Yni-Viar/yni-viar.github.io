@@ -53,9 +53,9 @@ nav section, header section, main, footer section {
     padding: 0 0.5em;
 }
 
-
 /* Navigation panel */
 nav {
+
     background: #33333333;
     border-bottom: thin solid #111111;
     line-height: 3em;
@@ -131,4 +131,19 @@ div .more {
 
 .visible_dropdown {
     display: block;
+    animation-duration: 3s;
+    animation-name: slide-in;
 }
+/*Credit - MDN*/
+@keyframes slide-in {
+    from {
+      translate: -3vw 0;
+      scale: 80% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+}
+  
