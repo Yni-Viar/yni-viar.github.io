@@ -3,6 +3,7 @@
     background-color: black;
     background-image: url('./background_image.png');
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 html, body {

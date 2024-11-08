@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yni's news (November 8) - Yni's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body id="news-11-08">
+<header>
+    <nav>
+        <section class="headpanel">
+            <span class="home">
+                <a href="./index.html"><img src="./content/ui/ic_fluent_home_16_color.svg"> Home</a>
+            </span>
+            <span class="links">
+                <a href="./blog.html"><img src="./content/ui/ic_fluent_receipt_16_color.svg">Blog</a>
+                <a id="projectsDropdownInvoker" onclick="dropdown('projectsDropdownInvoker', 'projectsDropdown')" href="#"><img src="./content/ui/ic_fluent_apps_16_color.svg">Projects &darr;</a>
+                <a href="./models.html"><img src="./content/ui/ic_fluent_document_folder_16_color.svg">Models</a>
+                <a href="./about.html"><img src="./content/ui/ic_fluent_person_16_color.svg">About</a>
+            </span>
+            <ul id="projectsDropdown" class="dropdown">
+                <li><a href="./projectie.html">Project I.E.</a></li>
+                <li><a href="./tgpy.html">Project TGPY</a></li>
+                <li><a href="./scp-projects.html">SCP universe projects</a></li>
+            </ul>
+
+        </section>
+    </nav>
+</header>
+<main>
+<article>
+<h1><a href="./blog/news-11-08/">Yni's news (November 8)</a></h1>
+<p class="meta">Published on 2024-11-08 by <b>Yni</b></p>
+<h2>SCP Map Generator update</h2>
+<p>I added checks for room placement, so the large room support is implemented.
+(Fun fact - certain amount of large endrooms will always spawn, because it is processing before the rest map generates. The amount of always spawning large endrooms is calculated by this formula: (Size of the zone) / 6)</p>
+<p><img src="./content/images/blog_2024-11-08.png" alt="New generator example" /></p>
+<p>Also I used Manhattan function for more straight generation (previously, it had some problems with too many corners.)</p>
+<h2>⚠️Important news - SCP project licensing.</h2>
+<h3>My SCP-related assets relicense.</h3>
+<p>Since CC-BY-SA 3.0 is not compatible with <em>anything except other CC licenses</em>, and CC-BY-SA 4.0 is compatible only with GNU GPL 3, and those licensing have problem with Adaptation meaning,
+I relicense my rooms model (and modified statue, that may look like SCP-173) as <strong>CC-BY 4.0</strong> for more wide usage (even for Unreal Engine).
+Other SCP-related assets I relicense under CC-BY-SA 4.0.</p>
+<h3>SCP: Outrun project relicense.</h3>
+<p>Continuing the previous topic, I announce relicensing SCP: Outrun under dual license: <strong>GNU GPL 3</strong> for <em>SCP Foundation</em> usages, and<strong>MIT License</strong> for <em>other</em> usages.
+Also, I will <em>remove</em> CC-BY-SA 3.0 assets to avoid any trouble. (I already replaced MTF model with recently open-sourced SCP:SL one)</p>
+<h3>What about CC0 license for SCP: Outrun, since it is good for code and <em>actually <strong>is</strong></em> a Creative Commons license, so CC-BY-SA 3.0 assets can be used?</h3>
+<p>I am thinking about it, but cannot decide:</p>
+<ul>
+<li>Pros: Licenses are now compatible, no need to change.</li>
+<li>Cons: This means, that I should also relicense most TGPY projects, used in SCP: Outrun, I am not ready for this... Also how much is right to relicense the <strong>WHOLE</strong> game code under the public domain, just for CC-BY-SA 3 needs? A <em>whole game</em>, not a <em>library</em> (like SQLite did)?</li>
+</ul>
+<p>Currently, announced license terms (GPL for SCP Foundation usage, MIT license for other usage) will remain for SCP: Outrun.</p>
+<h3>What about SCP: Site Online?</h3>
+<p>It has some problems for implementing change, so I suggest to <em>not</em> continue SCP: Site Online development, since it may have problems sayed above.</p>
+
+</article>
+
+</main>
+<script>
+    function dropdown(invokerId, dropdownId)
+    {
+        const invoker = document.getElementById(invokerId);
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.classList.toggle("visible_dropdown");
+    }
+    
+
+</script>
+<div id="safeFooter">
+<section>
+    <p>&copy; 2024 Yni Viar. Content licensed under CC-BY 4.0</p>
+    <p>The website is made by Makesite.py static website generator</p>
+</section>
+</div>
+
+</body>
+</html>
