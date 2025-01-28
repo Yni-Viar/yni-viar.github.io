@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story game public demo - Yni's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body id="internal-eternal-showcase-demo">
+<header>
+    <nav>
+        <section class="headpanel">
+            <span class="home">
+                <a href="./index.html"><img src="./content/ui/ic_fluent_home_16_color.svg"> Home</a>
+            </span>
+            <span class="links">
+                <a href="./blog.html"><img src="./content/ui/ic_fluent_receipt_16_color.svg">Blog</a>
+                <a id="projectsDropdownInvoker" onclick="dropdown('projectsDropdownInvoker', 'projectsDropdown')" href="#"><img src="./content/ui/ic_fluent_apps_16_color.svg">Projects &darr;</a>
+                <a href="./models.html"><img src="./content/ui/ic_fluent_document_folder_16_color.svg">Models</a>
+                <a href="./about.html"><img src="./content/ui/ic_fluent_person_16_color.svg">About</a>
+            </span>
+            <ul id="projectsDropdown" class="dropdown">
+                <li><a href="./projectie.html">Project I.E.</a></li>
+                <li><a href="./tgpy.html">Project TGPY</a></li>
+                <li><a href="./scp-projects.html">SCP universe projects</a></li>
+            </ul>
+
+        </section>
+    </nav>
+</header>
+<main>
+<article>
+<h1><a href="./blog/internal-eternal-showcase-demo/">Story game public demo</a></h1>
+<p class="meta">Published on 2025-01-28 by <b>Yni</b></p>
+<p>I previously showcased a video about my Story game - codename &quot;Internal Eternal&quot;</p>
+<p>In the October devlog I said about bad quality of my game.</p>
+<p>In this showcase I present the first reworked location - the protagonist's home.</p>
+<p>You can download the showcase demo on PC:</p>
+<p><a href="https://yniviar.itch.io/internal-eternal-showcase">Download for Windows</a>
+Password - az,HLd8W/=U!</p>
+
+</article>
+
+</main>
+<script>
+    function dropdown(invokerId, dropdownId)
+    {
+        const invoker = document.getElementById(invokerId);
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.classList.toggle("visible_dropdown");
+    }
+    
+
+</script>
+<div id="safeFooter">
+<section>
+    <p>&copy; 2025 Yni Viar. Content licensed under CC-BY 4.0</p>
+    <p>The website is made by Makesite.py static website generator</p>
+</section>
+</div>
+
+</body>
+</html>
