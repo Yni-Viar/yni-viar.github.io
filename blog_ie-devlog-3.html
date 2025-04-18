@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codename "Internal Eternal": Devlog 3 - Yni's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body id="ie-devlog-3">
+<header>
+    <nav>
+        <section class="headpanel">
+            <span class="home">
+                <a href="./index.html"><img src="./content/ui/ic_fluent_home_16_color.svg"> Home</a>
+            </span>
+            <span class="links">
+                <a href="./blog.html"><img src="./content/ui/ic_fluent_news_16_color.svg">Blog</a>
+                <!--<a id="projectsDropdownInvoker" onclick="dropdown('projectsDropdownInvoker', 'projectsDropdown')" href="#"><img src="./content/ui/ic_fluent_apps_16_color.svg">Projects &darr;</a>-->
+                <a href="./projectie.html"><img src="./content/ui/ic_fluent_content_view_16_color.svg">Codename "Internal Eternal"</a>
+                <a href="./miniprojects.html"><img src="./content/ui/ic_fluent_apps_16_color.svg">Miniprojects</a>
+                <a href="./models.html"><img src="./content/ui/ic_fluent_document_folder_16_color.svg">Models</a>
+                <a href="./about.html"><img src="./content/ui/ic_fluent_person_16_color.svg">About</a>
+            </span>
+            <!--<ul id="projectsDropdown" class="dropdown">
+                <li><a href="./projectie.html">Codename "Internal Eternal"</a></li>
+                <li><a href="./miniprojects.html">Miniprojects</a></li>
+                <li><a href="./scp-projects.html">SCP universe projects</a></li>
+            </ul>-->
+
+        </section>
+    </nav>
+</header>
+<main>
+<article>
+<h1><a href="./blog/ie-devlog-3/">Codename "Internal Eternal": Devlog 3</a></h1>
+<p class="meta">Published on 2025-04-18 by <b>Yni</b></p>
+<h1>Walking NPC!</h1>
+<p>Since there is a Humanizer addon for Godot (Humanizer is Godot MakeHuman), I used and modified human generator for my game.
+The result is here.
+<img src="./content/images/project_ie_dev_walking_npc.gif" alt="Don't worry about the sign on the left - it will be replaced eventually" /></p>
+<blockquote>
+<p>Fun fact - there was the bug, where these walking NPC, like zombies, went only to protagonist's home. I eventually fixed it by using Godot random point parameter.</p>
+</blockquote>
+<h1>Various bugfixes.</h1>
+<p>The trees, that were shown in previous teaser-devlog, were too large. I fixed their size (as for now, I think, that is not enough) + fixed gaps between ground and beginning of the tree model.</p>
+
+</article>
+
+</main>
+<!--
+<script>
+    function dropdown(invokerId, dropdownId)
+    {
+        const invoker = document.getElementById(invokerId);
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.classList.toggle("visible_dropdown");
+    }
+    
+
+</script>-->
+<div id="safeFooter">
+<section>
+    <p>&copy; 2025 Yni Viar. Content licensed under CC-BY 4.0</p>
+    <p>The website is made by Makesite.py static website generator</p>
+</section>
+</div>
+
+</body>
+</html>
